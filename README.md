@@ -1,6 +1,6 @@
 #Remote
 
-##I'm currently learning GitHub!
+## I'm currently learning GitHub!
 *Hooray for me!*
 
 * Pace University - NYC Campus
