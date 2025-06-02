@@ -9,5 +9,5 @@
 
 ## How it goin?
 - Day 1: We *pulled* through
-- Day 2: Comming Up :O
+- Day 2: Making teams! :O
 - Day 3: **???????**
