@@ -7,10 +7,10 @@ class GameMaster:
         self.suites = ["Diamond", "Heart", "Spade", "Club"]
         self.ranks = ["1", "2", "3", "4", "5", "6", "7", "8"]
 
-    def Distribute(self):
+    """def Distribute(self):
         suite = random.choices(self.suites)
         rank = random.choices(self.ranks)
-        return Card(suite[0], rank[0])
+        return Card(suite[0], rank[0])"""
 
 class Card:
     def __init__(self, suite, rank):
@@ -28,12 +28,13 @@ class Hand:
             self.hand.append(Func.Distribute())
 
     def ShowHand(self, form):
+        form = form.lower()
         if len(self.hand) == 0:
             print("This hand is empty!")
         else:
             for i in range(0, len(self.hand)):
-                if form.lower() == "line":
+                if form == "line":
                     print(self.hand[i].name + " |", end=" ") 
-                elif form.lower() == "list":
-                    print(str(i + 1) + ": " + self.hand[i].name)
+                elif form == "list":
+                    print("= " + self.hand[i].name)
                 

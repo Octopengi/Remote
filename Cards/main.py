@@ -5,6 +5,6 @@ master = Class.GameMaster()
 
 you = Class.Hand()
 
-you.Draw(5)
+you.Draw(9)
 
-you.ShowHand("LInE")
+you.ShowHand("liST")
