@@ -8,6 +8,11 @@ you = Class.Hand()
 
 you.Draw(9)
 
-you.ShowHand("liST")
+#you.ShowHand("liST")
 
-you.PlayCard(random.randint(0, len(you.hand) - 1), True)
+#you.PlayCard(random.randint(0, len(you.hand) - 1), True)
+
+fruits = ["Banana", "Mango", "Peach", "Strawberry", "Dragonfruit", "Grape", "Orange", "Apple", "Pineapple", "Blueberry", "Blackberry", "Raspberry"]
+
+random.shuffle(fruits)
+print(fruits[::])
