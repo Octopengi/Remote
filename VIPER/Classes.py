@@ -11,5 +11,16 @@ class ElevManag:
         elevators = []
 
     def AddRequest(self, floor, direction):
+        direction = direction.lower()
+
+        if len(direction) != 1:
+            return
+        
         if direction not in self.requests[floor]:
             self.requests[floor].append(direction)
+
+    """def AssignReqs(self):
+        for i in self.requests.keys():
+            if len(self.requests[i]) != 0:
+                for x in self.elevators:
+                    if x.direction in """
