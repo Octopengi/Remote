@@ -27,6 +27,11 @@ class Hand:
         for i in range(0, quant):
             self.hand.append(Func.Distribute())
 
+    def PlayCard(self, listNum, display = False):
+        if display:
+            print("Played a " + self.hand[listNum - 1].name + "!")
+        return self.hand.pop(listNum - 1)
+
     def ShowHand(self, form):
         form = form.lower()
         if len(self.hand) == 0:
@@ -36,5 +41,4 @@ class Hand:
                 if form == "line":
                     print(self.hand[i].name + " |", end=" ") 
                 elif form == "list":
-                    print("= " + self.hand[i].name)
-                
+                    print(str(i + 1) + " = " + self.hand[i].name)
